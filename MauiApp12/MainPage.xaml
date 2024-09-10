@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiApp12.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sample="clr-namespace:MauiApp12"
+    xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
+    x:Name="this"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid Margin="10" RowDefinitions="Auto, *">
+        <StackLayout Spacing="100">
+            <Image
+                Aspect="AspectFit"
+                BackgroundColor="Red"
+                HorizontalOptions="Fill"
+                Source="dotnet"
+                WidthRequest="100" />
+
+            <Button Clicked="Button_Clicked" Text="Open Bottom sheet" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
